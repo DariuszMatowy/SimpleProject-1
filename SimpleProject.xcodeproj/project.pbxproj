@@ -13,6 +13,8 @@
 		749845CE1B11E9EB002266D2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 749845CD1B11E9EB002266D2 /* Images.xcassets */; };
 		749845D11B11E9EB002266D2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 749845CF1B11E9EB002266D2 /* LaunchScreen.xib */; };
 		749845DD1B11E9EB002266D2 /* SimpleProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749845DC1B11E9EB002266D2 /* SimpleProjectTests.swift */; };
+		749845E71B11FA0D002266D2 /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749845E61B11FA0D002266D2 /* ViewControllerSpec.swift */; };
+		749845E81B11FD07002266D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749845C81B11E9EB002266D2 /* ViewController.swift */; };
 		FE58294A6B3E20C5C968735A /* Pods_SimpleProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D160301EB06EFCBDBE31BDC5 /* Pods_SimpleProjectTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -38,6 +40,7 @@
 		749845D61B11E9EB002266D2 /* SimpleProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		749845DB1B11E9EB002266D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		749845DC1B11E9EB002266D2 /* SimpleProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleProjectTests.swift; sourceTree = "<group>"; };
+		749845E61B11FA0D002266D2 /* ViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
 		AAF51F25BEDDBCA6DFCD71C2 /* Pods-SimpleProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleProjectTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SimpleProjectTests/Pods-SimpleProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		D160301EB06EFCBDBE31BDC5 /* Pods_SimpleProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,6 +119,7 @@
 			children = (
 				749845DC1B11E9EB002266D2 /* SimpleProjectTests.swift */,
 				749845DA1B11E9EB002266D2 /* Supporting Files */,
+				749845E61B11FA0D002266D2 /* ViewControllerSpec.swift */,
 			);
 			path = SimpleProjectTests;
 			sourceTree = "<group>";
@@ -296,7 +300,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				749845E81B11FD07002266D2 /* ViewController.swift in Sources */,
 				749845DD1B11E9EB002266D2 /* SimpleProjectTests.swift in Sources */,
+				749845E71B11FA0D002266D2 /* ViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
