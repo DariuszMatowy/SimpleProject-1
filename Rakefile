@@ -5,8 +5,16 @@ end
 
 ##########################
 
+def test_config(scheme, sdk_version: "iphonesimulator", configuration: "Test", destination: "platform=iOS Simulator,name=iPhone 5s,OS=8.3")
+  build_config.merge(
+    scheme: scheme,
+    sdk: sdk_version,
+    configuration: configuration,
+    destination: destination,
+  )
+end
+
 def run_xcode_tests(scheme, in_matrix: true)
-  return if in_matrix && stable?
 
   flags = xcodebuild_flags(test_config(scheme))
 
