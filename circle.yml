@@ -1,0 +1,18 @@
+machine:
+  xcode:
+    version: "6.3.1"
+
+test:
+  override:
+    - set -o pipefail &&
+      xcodebuild
+        -scheme "SimpleProject”
+        -sdk iphonesimulator
+        -destination 'platform=iOS Simulator,OS=8.1,name=iPhone 6'
+        -project SimpleProject.xcodeproj
+        -configuration Debug
+        CODE_SIGNING_REQUIRED=NO
+        CODE_SIGN_IDENTITY=
+        PROVISIONING_PROFILE=
+        clean test |
+
