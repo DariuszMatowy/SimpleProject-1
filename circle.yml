@@ -6,7 +6,7 @@ test:
   override:
     - set -o pipefail &&
       xcodebuild
-        -scheme "SimpleProject-iOS”
+        -scheme "SimpleProject”
         -sdk iphonesimulator
         -destination 'platform=iOS Simulator,OS=8.1,name=iPhone 6'
         -project SimpleProject.xcodeproj
