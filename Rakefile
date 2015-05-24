@@ -14,6 +14,16 @@ def test_config(scheme, sdk_version: "iphonesimulator", configuration: "Test", d
   )
 end
 
+def bundle_id
+  orig_bundle_id ||= ENV["BUNDLE_ID"] || `/usr/libexec/PlistBuddy -c 'Print :CFBundleIdentifier' '#{infoplist_path}'`.strip
+
+  if stable?
+    orig_bundle_id
+  else
+    orig_bundle_id += ".staging"
+  end
+end
+
 def run_xcode_tests(scheme, in_matrix: true)
 
   flags = xcodebuild_flags(test_config(scheme))
