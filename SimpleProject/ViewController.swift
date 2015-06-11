@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  SimpleProject
 //
-//  Created by Aleksander Popko on 24.05.2015.
+//  Created by Aleksander Popko on 24.05.2015x.
 //  Copyright (c) 2015 AP. All rights reserved.
 //
 
