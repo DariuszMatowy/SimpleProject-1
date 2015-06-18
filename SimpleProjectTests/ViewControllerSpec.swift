@@ -15,7 +15,7 @@ class ViewControllerSpec: QuickSpec {
         
         let mockNumberFirst = 5;
         let mockNumberSecond = 3;
-        let mockSum = mockNumberFirst + mockNumberSecond + 3
+        let mockSum = mockNumberFirst + mockNumberSecond
         
         
         var sut: ViewController!
